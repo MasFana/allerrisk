@@ -1,0 +1,31 @@
+Analyzing allerrisk...                                          
+
+   info • Angle brackets will be interpreted as HTML • lib/app/core/services/storage_service.dart:27:52 • unintended_html_in_doc_comment
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/app/core/widgets/risk_meter_widget.dart:54:30 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/app/core/widgets/risk_meter_widget.dart:56:49 • deprecated_member_use
+   info • Statements in an if should be enclosed in a block • lib/app/data/repositories/mock/mock_patient_repository.dart:45:9 • curly_braces_in_flow_control_structures
+   info • Statements in an if should be enclosed in a block • lib/app/data/repositories/mock/mock_patient_repository.dart:64:9 • curly_braces_in_flow_control_structures
+   info • Statements in an if should be enclosed in a block • lib/app/data/repositories/mock/mock_patient_repository.dart:67:9 • curly_braces_in_flow_control_structures
+   info • The local variable '_a' starts with an underscore • lib/app/modules/splash/splash_view.dart:61:20 • no_leading_underscores_for_local_identifiers
+   info • The constant name 'SPLASH' isn't a lowerCamelCase identifier • lib/app/routes/app_routes.dart:5:23 • constant_identifier_names
+   info • The constant name 'ONBOARDING' isn't a lowerCamelCase identifier • lib/app/routes/app_routes.dart:6:23 • constant_identifier_names
+   info • The constant name 'ROLE_SELECTOR' isn't a lowerCamelCase identifier • lib/app/routes/app_routes.dart:7:23 • constant_identifier_names
+   info • The constant name 'LOGIN' isn't a lowerCamelCase identifier • lib/app/routes/app_routes.dart:10:23 • constant_identifier_names
+   info • The constant name 'REGISTER' isn't a lowerCamelCase identifier • lib/app/routes/app_routes.dart:11:23 • constant_identifier_names
+   info • The constant name 'FORGOT_PASSWORD' isn't a lowerCamelCase identifier • lib/app/routes/app_routes.dart:12:23 • constant_identifier_names
+   info • The constant name 'PARENT_HOME' isn't a lowerCamelCase identifier • lib/app/routes/app_routes.dart:15:23 • constant_identifier_names
+   info • The constant name 'CHILD_LIST' isn't a lowerCamelCase identifier • lib/app/routes/app_routes.dart:16:23 • constant_identifier_names
+   info • The constant name 'CHILD_FORM' isn't a lowerCamelCase identifier • lib/app/routes/app_routes.dart:17:23 • constant_identifier_names
+   info • The constant name 'ASSESSMENT' isn't a lowerCamelCase identifier • lib/app/routes/app_routes.dart:18:23 • constant_identifier_names
+   info • The constant name 'ASSESSMENT_RESULT' isn't a lowerCamelCase identifier • lib/app/routes/app_routes.dart:19:23 • constant_identifier_names
+   info • The constant name 'ASSESSMENT_HISTORY' isn't a lowerCamelCase identifier • lib/app/routes/app_routes.dart:20:23 • constant_identifier_names
+   info • The constant name 'PARENT_ARTICLES' isn't a lowerCamelCase identifier • lib/app/routes/app_routes.dart:21:23 • constant_identifier_names
+   info • The constant name 'PARENT_ARTICLE_DETAIL' isn't a lowerCamelCase identifier • lib/app/routes/app_routes.dart:22:23 • constant_identifier_names
+   info • The constant name 'PARENT_SETTINGS' isn't a lowerCamelCase identifier • lib/app/routes/app_routes.dart:23:23 • constant_identifier_names
+   info • The constant name 'DOCTOR_DASHBOARD' isn't a lowerCamelCase identifier • lib/app/routes/app_routes.dart:26:23 • constant_identifier_names
+   info • The constant name 'PATIENT_LIST' isn't a lowerCamelCase identifier • lib/app/routes/app_routes.dart:27:23 • constant_identifier_names
+   info • The constant name 'PATIENT_DETAIL' isn't a lowerCamelCase identifier • lib/app/routes/app_routes.dart:28:23 • constant_identifier_names
+   info • The constant name 'DOCTOR_ARTICLES' isn't a lowerCamelCase identifier • lib/app/routes/app_routes.dart:29:23 • constant_identifier_names
+   info • The constant name 'ARTICLE_EDITOR' isn't a lowerCamelCase identifier • lib/app/routes/app_routes.dart:30:23 • constant_identifier_names
+   info • The constant name 'DOCTOR_SETTINGS' isn't a lowerCamelCase identifier • lib/app/routes/app_routes.dart:31:23 • constant_identifier_names
+

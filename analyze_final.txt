@@ -1,0 +1,5 @@
+Analyzing allerrisk...                                          
+
+  error • The method 'getArticles' isn't defined for the type 'IArticleRepository' • lib/app/modules/doctor/dashboard/dashboard_controller.dart:43:28 • undefined_method
+
+1 issue found. (ran in 4.6s)

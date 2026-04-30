@@ -1,0 +1,44 @@
+
+┌─────────────────────────────────────────────────────────┐
+│ A new version of Flutter is available!                  │
+│                                                         │
+│ To update to the latest version, run "flutter upgrade". │
+└─────────────────────────────────────────────────────────┘
+Analyzing allerrisk...                                          
+
+warning • Unused import: 'dart:typed_data' • lib/app/core/services/pdf_service.dart:1:8 • unused_import
+   info • Unnecessary use of 'toList' in a spread • lib/app/core/services/pdf_service.dart:139:12 • unnecessary_to_list_in_spreads
+warning • The value of the field '_authService' isn't used • lib/app/modules/doctor/article/article_editor_controller.dart:7:21 • unused_field
+  error • The argument type 'ArticleCategory' can't be assigned to the parameter type 'String?'.  • lib/app/modules/doctor/article/article_editor_view.dart:36:28 • argument_type_not_assignable
+  error • A value of type 'String' can't be assigned to a variable of type 'ArticleCategory' • lib/app/modules/doctor/article/article_editor_view.dart:39:76 • invalid_assignment
+  error • The argument type 'List<DropdownMenuItem<ArticleCategory>>' can't be assigned to the parameter type 'List<DropdownMenuItem<String>>?'.  • lib/app/modules/doctor/article/article_editor_view.dart:41:28 • argument_type_not_assignable
+  error • The argument type 'ArticleCategory' can't be assigned to the parameter type 'String'.  • lib/app/modules/doctor/article/article_editor_view.dart:42:69 • argument_type_not_assignable
+  error • Target of URI doesn't exist: '../../../data/interfaces/i_article_repository.dart' • lib/app/modules/doctor/article/article_list_controller.dart:2:8 • uri_does_not_exist
+  error • Undefined class 'IArticleRepository' • lib/app/modules/doctor/article/article_list_controller.dart:8:9 • undefined_class
+  error • The name 'IArticleRepository' isn't a type, so it can't be used as a type argument • lib/app/modules/doctor/article/article_list_controller.dart:8:58 • non_type_as_type_argument
+   info • Unnecessary use of multiple underscores • lib/app/modules/doctor/article/article_list_view.dart:37:35 • unnecessary_underscores
+  error • Target of URI doesn't exist: '../../../data/interfaces/i_patient_repository.dart' • lib/app/modules/doctor/dashboard/dashboard_controller.dart:2:8 • uri_does_not_exist
+  error • Target of URI doesn't exist: '../../../data/interfaces/i_article_repository.dart' • lib/app/modules/doctor/dashboard/dashboard_controller.dart:3:8 • uri_does_not_exist
+  error • Undefined class 'IPatientRepository' • lib/app/modules/doctor/dashboard/dashboard_controller.dart:10:9 • undefined_class
+  error • The name 'IPatientRepository' isn't a type, so it can't be used as a type argument • lib/app/modules/doctor/dashboard/dashboard_controller.dart:10:58 • non_type_as_type_argument
+  error • Undefined class 'IArticleRepository' • lib/app/modules/doctor/dashboard/dashboard_controller.dart:11:9 • undefined_class
+  error • The name 'IArticleRepository' isn't a type, so it can't be used as a type argument • lib/app/modules/doctor/dashboard/dashboard_controller.dart:11:58 • non_type_as_type_argument
+  error • The method 'compareTo' can't be unconditionally invoked because the receiver can be 'null' • lib/app/modules/doctor/dashboard/dashboard_controller.dart:88:45 • unchecked_use_of_nullable_value
+  error • The argument type 'DateTime?' can't be assigned to the parameter type 'DateTime'.  • lib/app/modules/doctor/dashboard/dashboard_controller.dart:88:55 • argument_type_not_assignable
+warning • Unused import: '../../../data/models/patient_model.dart' • lib/app/modules/doctor/dashboard/dashboard_view.dart:9:8 • unused_import
+warning • Unused import: '../../../data/models/assessment_result_model.dart' • lib/app/modules/doctor/dashboard/dashboard_view.dart:10:8 • unused_import
+  error • Target of URI doesn't exist: '../../../data/interfaces/i_patient_repository.dart' • lib/app/modules/doctor/patients/patient_detail_controller.dart:3:8 • uri_does_not_exist
+  error • Undefined class 'IPatientRepository' • lib/app/modules/doctor/patients/patient_detail_controller.dart:12:9 • undefined_class
+  error • The name 'IPatientRepository' isn't a type, so it can't be used as a type argument • lib/app/modules/doctor/patients/patient_detail_controller.dart:12:58 • non_type_as_type_argument
+   info • The type of the right operand ('String') isn't a subtype or a supertype of the left operand ('Gender') • lib/app/modules/doctor/patients/patient_detail_view.dart:104:35 • unrelated_type_equality_checks
+   info • Unnecessary use of multiple underscores • lib/app/modules/doctor/patients/patient_detail_view.dart:261:37 • unnecessary_underscores
+  error • Target of URI doesn't exist: '../../../data/interfaces/i_patient_repository.dart' • lib/app/modules/doctor/patients/patient_list_controller.dart:2:8 • uri_does_not_exist
+  error • Undefined class 'IPatientRepository' • lib/app/modules/doctor/patients/patient_list_controller.dart:8:9 • undefined_class
+  error • The name 'IPatientRepository' isn't a type, so it can't be used as a type argument • lib/app/modules/doctor/patients/patient_list_controller.dart:8:58 • non_type_as_type_argument
+   info • Unnecessary use of multiple underscores • lib/app/modules/doctor/patients/patient_list_view.dart:44:35 • unnecessary_underscores
+warning • Unused import: '../../../routes/app_routes.dart' • lib/app/modules/doctor/settings/settings_controller.dart:5:8 • unused_import
+warning • Unused import: '../../../routes/app_routes.dart' • lib/app/modules/doctor/settings/settings_view.dart:5:8 • unused_import
+   info • 'activeColor' is deprecated and shouldn't be used. Use activeThumbColor instead. This feature was deprecated after v3.31.0-2.0.pre • lib/app/modules/doctor/settings/settings_view.dart:31:21 • deprecated_member_use
+   info • 'activeColor' is deprecated and shouldn't be used. Use activeThumbColor instead. This feature was deprecated after v3.31.0-2.0.pre • lib/app/modules/doctor/settings/settings_view.dart:39:21 • deprecated_member_use
+   info • 'activeColor' is deprecated and shouldn't be used. Use activeThumbColor instead. This feature was deprecated after v3.31.0-2.0.pre • lib/app/modules/doctor/settings/settings_view.dart:51:21 • deprecated_member_use
+

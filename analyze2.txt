@@ -1,0 +1,82 @@
+Analyzing allerrisk...                                          
+
+  error • Target of URI doesn't exist: '../utils/formatters.dart' • lib/app/core/services/pdf_service.dart:6:8 • uri_does_not_exist
+  error • Undefined name 'AppFormatters' • lib/app/core/services/pdf_service.dart:63:43 • undefined_identifier
+  error • Undefined name 'AppFormatters' • lib/app/core/services/pdf_service.dart:97:40 • undefined_identifier
+  error • Undefined name 'AppFormatters' • lib/app/core/services/pdf_service.dart:133:26 • undefined_identifier
+   info • Unnecessary use of 'toList' in a spread • lib/app/core/services/pdf_service.dart:139:12 • unnecessary_to_list_in_spreads
+warning • Unused import: 'package:uuid/uuid.dart' • lib/app/modules/doctor/article/article_editor_controller.dart:3:8 • unused_import
+  error • The getter 'contentHtml' isn't defined for the type 'Article' • lib/app/modules/doctor/article/article_editor_controller.dart:34:37 • undefined_getter
+  error • The getter 'imageUrl' isn't defined for the type 'Article' • lib/app/modules/doctor/article/article_editor_controller.dart:35:38 • undefined_getter
+   info • The argument type 'ArticleCategory' isn't related to 'String' • lib/app/modules/doctor/article/article_editor_controller.dart:37:31 • collection_methods_unrelated_type
+  error • A value of type 'ArticleCategory' can't be assigned to a variable of type 'String' • lib/app/modules/doctor/article/article_editor_controller.dart:38:34 • invalid_assignment
+warning • The value of the local variable 'doctorId' isn't used • lib/app/modules/doctor/article/article_editor_controller.dart:48:13 • unused_local_variable
+warning • The value of the local variable 'doctorName' isn't used • lib/app/modules/doctor/article/article_editor_controller.dart:49:13 • unused_local_variable
+  error • The named parameter 'hintText' isn't defined • lib/app/modules/doctor/article/article_editor_view.dart:59:17 • undefined_named_parameter
+  error • The getter 'surfaceContainer' isn't defined for the type 'AppColors' • lib/app/modules/doctor/article/article_editor_view.dart:72:40 • undefined_getter
+warning • Unused import: 'article_list_controller.dart' • lib/app/modules/doctor/article/article_list_binding.dart:2:8 • unused_import
+  error • The name 'ArticleListController' isn't a type, so it can't be used as a type argument • lib/app/modules/doctor/article/article_list_binding.dart:7:17 • non_type_as_type_argument
+  error • The method 'ArticleListController' isn't defined for the type 'ArticleListBinding' • lib/app/modules/doctor/article/article_list_binding.dart:7:46 • undefined_method
+  error • Target of URI doesn't exist: '../../../data/interfaces/i_article_repository.dart' • lib/app/modules/doctor/article/article_list_controller.dart:2:8 • uri_does_not_exist
+  error • Undefined class 'IArticleRepository' • lib/app/modules/doctor/article/article_list_controller.dart:8:9 • undefined_class
+  error • The name 'IArticleRepository' isn't a type, so it can't be used as a type argument • lib/app/modules/doctor/article/article_list_controller.dart:8:58 • non_type_as_type_argument
+   info • Unnecessary use of multiple underscores • lib/app/modules/doctor/article/article_list_view.dart:37:35 • unnecessary_underscores
+  error • The named parameter 'category' is required, but there's no corresponding argument • lib/app/modules/doctor/article/article_list_view.dart:65:24 • missing_required_argument
+  error • The named parameter 'date' is required, but there's no corresponding argument • lib/app/modules/doctor/article/article_list_view.dart:65:24 • missing_required_argument
+  error • The named parameter 'title' is required, but there's no corresponding argument • lib/app/modules/doctor/article/article_list_view.dart:65:24 • missing_required_argument
+  error • The named parameter 'article' isn't defined • lib/app/modules/doctor/article/article_list_view.dart:66:19 • undefined_named_parameter
+  error • Target of URI doesn't exist: '../../../data/interfaces/i_patient_repository.dart' • lib/app/modules/doctor/dashboard/dashboard_controller.dart:2:8 • uri_does_not_exist
+  error • Target of URI doesn't exist: '../../../data/interfaces/i_article_repository.dart' • lib/app/modules/doctor/dashboard/dashboard_controller.dart:3:8 • uri_does_not_exist
+  error • Undefined class 'IPatientRepository' • lib/app/modules/doctor/dashboard/dashboard_controller.dart:10:9 • undefined_class
+  error • The name 'IPatientRepository' isn't a type, so it can't be used as a type argument • lib/app/modules/doctor/dashboard/dashboard_controller.dart:10:58 • non_type_as_type_argument
+  error • Undefined class 'IArticleRepository' • lib/app/modules/doctor/dashboard/dashboard_controller.dart:11:9 • undefined_class
+  error • The name 'IArticleRepository' isn't a type, so it can't be used as a type argument • lib/app/modules/doctor/dashboard/dashboard_controller.dart:11:58 • non_type_as_type_argument
+  error • The method 'compareTo' can't be unconditionally invoked because the receiver can be 'null' • lib/app/modules/doctor/dashboard/dashboard_controller.dart:88:45 • unchecked_use_of_nullable_value
+  error • The argument type 'DateTime?' can't be assigned to the parameter type 'DateTime'.  • lib/app/modules/doctor/dashboard/dashboard_controller.dart:88:55 • argument_type_not_assignable
+  error • Target of URI doesn't exist: '../../../core/utils/formatters.dart' • lib/app/modules/doctor/dashboard/dashboard_view.dart:8:8 • uri_does_not_exist
+  error • The getter 'success' isn't defined for the type 'AppColors' • lib/app/modules/doctor/dashboard/dashboard_view.dart:101:26 • undefined_getter
+  error • The getter 'success' isn't defined for the type 'AppColors' • lib/app/modules/doctor/dashboard/dashboard_view.dart:103:45 • undefined_getter
+  error • The getter 'success' isn't defined for the type 'AppColors' • lib/app/modules/doctor/dashboard/dashboard_view.dart:108:63 • undefined_getter
+  error • The getter 'success' isn't defined for the type 'AppColors' • lib/app/modules/doctor/dashboard/dashboard_view.dart:112:47 • undefined_getter
+  error • The getter 'success' isn't defined for the type 'AppColors' • lib/app/modules/doctor/dashboard/dashboard_view.dart:153:32 • undefined_getter
+  error • The getter 'surfaceContainer' isn't defined for the type 'AppColors' • lib/app/modules/doctor/dashboard/dashboard_view.dart:304:28 • undefined_getter
+  error • Undefined name 'AppFormatters' • lib/app/modules/doctor/dashboard/dashboard_view.dart:326:100 • undefined_identifier
+  error • The getter 'surfaceContainer' isn't defined for the type 'AppColors' • lib/app/modules/doctor/dashboard/dashboard_view.dart:341:28 • undefined_getter
+  error • The named parameter 'category' is required, but there's no corresponding argument • lib/app/modules/doctor/dashboard/dashboard_view.dart:350:16 • missing_required_argument
+  error • The named parameter 'date' is required, but there's no corresponding argument • lib/app/modules/doctor/dashboard/dashboard_view.dart:350:16 • missing_required_argument
+  error • The named parameter 'title' is required, but there's no corresponding argument • lib/app/modules/doctor/dashboard/dashboard_view.dart:350:16 • missing_required_argument
+  error • The named parameter 'article' isn't defined • lib/app/modules/doctor/dashboard/dashboard_view.dart:351:11 • undefined_named_parameter
+  error • Target of URI doesn't exist: '../../../data/interfaces/i_patient_repository.dart' • lib/app/modules/doctor/patients/patient_detail_controller.dart:3:8 • uri_does_not_exist
+  error • Undefined class 'IPatientRepository' • lib/app/modules/doctor/patients/patient_detail_controller.dart:12:9 • undefined_class
+  error • The name 'IPatientRepository' isn't a type, so it can't be used as a type argument • lib/app/modules/doctor/patients/patient_detail_controller.dart:12:58 • non_type_as_type_argument
+  error • Target of URI doesn't exist: '../../../core/utils/formatters.dart' • lib/app/modules/doctor/patients/patient_detail_view.dart:5:8 • uri_does_not_exist
+  error • Undefined name 'AppFormatters' • lib/app/modules/doctor/patients/patient_detail_view.dart:100:29 • undefined_identifier
+   info • The type of the right operand ('String') isn't a subtype or a supertype of the left operand ('Gender') • lib/app/modules/doctor/patients/patient_detail_view.dart:104:35 • unrelated_type_equality_checks
+  error • Undefined name 'AppFormatters' • lib/app/modules/doctor/patients/patient_detail_view.dart:170:25 • undefined_identifier
+  error • Undefined name 'AppFormatters' • lib/app/modules/doctor/patients/patient_detail_view.dart:191:30 • undefined_identifier
+  error • The getter 'surfaceContainer' isn't defined for the type 'AppColors' • lib/app/modules/doctor/patients/patient_detail_view.dart:213:32 • undefined_getter
+   info • Unnecessary use of multiple underscores • lib/app/modules/doctor/patients/patient_detail_view.dart:261:37 • unnecessary_underscores
+  error • Undefined name 'AppFormatters' • lib/app/modules/doctor/patients/patient_detail_view.dart:280:31 • undefined_identifier
+  error • Target of URI doesn't exist: '../../../data/interfaces/i_patient_repository.dart' • lib/app/modules/doctor/patients/patient_list_controller.dart:2:8 • uri_does_not_exist
+  error • Undefined class 'IPatientRepository' • lib/app/modules/doctor/patients/patient_list_controller.dart:8:9 • undefined_class
+  error • The name 'IPatientRepository' isn't a type, so it can't be used as a type argument • lib/app/modules/doctor/patients/patient_list_controller.dart:8:58 • non_type_as_type_argument
+  error • Target of URI doesn't exist: '../../../core/utils/formatters.dart' • lib/app/modules/doctor/patients/patient_list_view.dart:5:8 • uri_does_not_exist
+   info • Unnecessary use of multiple underscores • lib/app/modules/doctor/patients/patient_list_view.dart:44:35 • unnecessary_underscores
+  error • The getter 'surfaceContainer' isn't defined for the type 'AppColors' • lib/app/modules/doctor/patients/patient_list_view.dart:63:32 • undefined_getter
+  error • Undefined name 'AppFormatters' • lib/app/modules/doctor/patients/patient_list_view.dart:212:29 • undefined_identifier
+  error • The getter 'success' isn't defined for the type 'AppColors' • lib/app/modules/doctor/patients/patient_list_view.dart:281:25 • undefined_getter
+warning • Unused import: 'settings_controller.dart' • lib/app/modules/doctor/settings/settings_binding.dart:2:8 • unused_import
+  error • The name 'SettingsController' isn't a type, so it can't be used as a type argument • lib/app/modules/doctor/settings/settings_binding.dart:7:17 • non_type_as_type_argument
+  error • The method 'SettingsController' isn't defined for the type 'SettingsBinding' • lib/app/modules/doctor/settings/settings_binding.dart:7:43 • undefined_method
+warning • Unused import: '../../../routes/app_routes.dart' • lib/app/modules/doctor/settings/settings_controller.dart:5:8 • unused_import
+warning • Unused import: '../../../routes/app_routes.dart' • lib/app/modules/doctor/settings/settings_view.dart:5:8 • unused_import
+   info • 'activeColor' is deprecated and shouldn't be used. Use activeThumbColor instead. This feature was deprecated after v3.31.0-2.0.pre • lib/app/modules/doctor/settings/settings_view.dart:31:21 • deprecated_member_use
+   info • 'activeColor' is deprecated and shouldn't be used. Use activeThumbColor instead. This feature was deprecated after v3.31.0-2.0.pre • lib/app/modules/doctor/settings/settings_view.dart:39:21 • deprecated_member_use
+   info • 'activeColor' is deprecated and shouldn't be used. Use activeThumbColor instead. This feature was deprecated after v3.31.0-2.0.pre • lib/app/modules/doctor/settings/settings_view.dart:51:21 • deprecated_member_use
+  error • The getter 'success' isn't defined for the type 'AppColors' • lib/app/modules/doctor/settings/settings_view.dart:138:38 • undefined_getter
+  error • The getter 'success' isn't defined for the type 'AppColors' • lib/app/modules/doctor/settings/settings_view.dart:144:71 • undefined_getter
+  error • The getter 'success' isn't defined for the type 'AppColors' • lib/app/modules/doctor/settings/settings_view.dart:146:86 • undefined_getter
+  error • The getter 'surfaceContainer' isn't defined for the type 'AppColors' • lib/app/modules/doctor/settings/settings_view.dart:171:30 • undefined_getter
+  error • The name 'ArticleListView' isn't a class • lib/app/routes/app_pages.dart:156:41 • creation_with_non_type
+  error • The name 'SettingsView' isn't a class • lib/app/routes/app_pages.dart:166:41 • creation_with_non_type
+

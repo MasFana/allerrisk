@@ -4,7 +4,7 @@ import 'app_colors.dart';
 import 'app_typography.dart';
 import 'app_dimensions.dart';
 
-/// AllerRisk ThemeData — "The Clinical Curator"
+/// AllerRisk ThemeData — "The Clinical Curator" (Light Mode Only)
 ///
 /// Key rules from DESIGN.md:
 ///   • No 1px solid borders (the No-Line Rule)
@@ -13,95 +13,67 @@ import 'app_dimensions.dart';
 ///   • Glassmorphism for floating nav/modals (backdrop-blur 12–20px)
 ///   • Ambient shadows only: blur 32px, y 8px, rgba tint of on-surface
 abstract class AppTheme {
-  // ── Light Theme ───────────────────────────────────────────────
-  static ThemeData get light => _build(Brightness.light);
+  
+  static ThemeData get light => _build();
 
-  // ── Dark Theme ────────────────────────────────────────────────
-  static ThemeData get dark => _build(Brightness.dark);
-
-  static ThemeData _build(Brightness brightness) {
-    final isDark = brightness == Brightness.dark;
-
-    final colorScheme = isDark
-        ? ColorScheme.fromSeed(
-            seedColor: AppColors.primary,
-            brightness: Brightness.dark,
-          ).copyWith(
-            primary: AppColors.primary,
-            onPrimary: AppColors.onPrimary,
-            primaryContainer: AppColors.onPrimaryContainer,
-            secondary: AppColors.secondary,
-            tertiary: AppColors.tertiary,
-            error: AppColors.error,
-            surface: AppColors.surfaceDark,
-            onSurface: AppColors.onSurfaceDark,
-            onSurfaceVariant: AppColors.onSurfaceVariantDark,
-            outline: AppColors.outlineVariantDark,
-            outlineVariant: AppColors.outlineVariantDark,
-          )
-        : ColorScheme.fromSeed(
-            seedColor: AppColors.primary,
-            brightness: Brightness.light,
-          ).copyWith(
-            primary: AppColors.primary,
-            onPrimary: AppColors.onPrimary,
-            primaryContainer: AppColors.primaryContainer,
-            onPrimaryContainer: AppColors.onPrimaryContainer,
-            secondary: AppColors.secondary,
-            onSecondary: AppColors.onSecondary,
-            secondaryContainer: AppColors.secondaryContainer,
-            onSecondaryContainer: AppColors.onSecondaryContainer,
-            tertiary: AppColors.tertiary,
-            onTertiary: AppColors.onTertiary,
-            tertiaryContainer: AppColors.tertiaryContainer,
-            onTertiaryContainer: AppColors.onTertiaryContainer,
-            error: AppColors.error,
-            onError: AppColors.onError,
-            errorContainer: AppColors.errorContainer,
-            onErrorContainer: AppColors.onErrorContainer,
-            surface: AppColors.surface,
-            onSurface: AppColors.onSurface,
-            onSurfaceVariant: AppColors.onSurfaceVariant,
-            outline: AppColors.outline,
-            outlineVariant: AppColors.outlineVariant,
-          );
+  static ThemeData _build() {
+    final colorScheme = ColorScheme.fromSeed(
+      seedColor: AppColors.primary,
+      brightness: Brightness.light,
+    ).copyWith(
+      primary: AppColors.primary,
+      onPrimary: AppColors.onPrimary,
+      primaryContainer: AppColors.primaryContainer,
+      onPrimaryContainer: AppColors.onPrimaryContainer,
+      secondary: AppColors.secondary,
+      onSecondary: AppColors.onSecondary,
+      secondaryContainer: AppColors.secondaryContainer,
+      onSecondaryContainer: AppColors.onSecondaryContainer,
+      tertiary: AppColors.tertiary,
+      onTertiary: AppColors.onTertiary,
+      tertiaryContainer: AppColors.tertiaryContainer,
+      onTertiaryContainer: AppColors.onTertiaryContainer,
+      error: AppColors.error,
+      onError: AppColors.onError,
+      errorContainer: AppColors.errorContainer,
+      onErrorContainer: AppColors.onErrorContainer,
+      surface: AppColors.surface,
+      onSurface: AppColors.onSurface,
+      onSurfaceVariant: AppColors.onSurfaceVariant,
+      outline: AppColors.outline,
+      outlineVariant: AppColors.outlineVariant,
+    );
 
     final textTheme = AppTypography.textTheme;
 
     return ThemeData(
       useMaterial3: true,
       colorScheme: colorScheme,
-      brightness: brightness,
+      brightness: Brightness.light,
       textTheme: textTheme,
 
       // ── Scaffold ──────────────────────────────────────────────
-      scaffoldBackgroundColor: isDark
-          ? AppColors.surfaceDark
-          : AppColors.surface,
+      scaffoldBackgroundColor: AppColors.surface,
 
       // ── AppBar — no elevation, transparent, no border ─────────
       appBarTheme: AppBarTheme(
         elevation: 0,
         scrolledUnderElevation: 0,
         backgroundColor: Colors.transparent,
-        foregroundColor: isDark ? AppColors.onSurfaceDark : AppColors.onSurface,
-        systemOverlayStyle: isDark
-            ? SystemUiOverlayStyle.light
-            : SystemUiOverlayStyle.dark,
+        foregroundColor: AppColors.onSurface,
+        systemOverlayStyle: SystemUiOverlayStyle.dark,
         titleTextStyle: textTheme.titleLarge?.copyWith(
-          color: isDark ? AppColors.onSurfaceDark : AppColors.onSurface,
+          color: AppColors.onSurface,
         ),
-        iconTheme: IconThemeData(
-          color: isDark ? AppColors.onSurfaceDark : AppColors.onSurface,
+        iconTheme: const IconThemeData(
+          color: AppColors.onSurface,
         ),
       ),
 
       // ── Card — no hard borders, tonal lift ───────────────────
       cardTheme: CardThemeData(
         elevation: AppDimensions.elevationNone,
-        color: isDark
-            ? AppColors.surfaceContainerLowDark
-            : AppColors.surfaceContainerLowest,
+        color: AppColors.surfaceContainerLowest,
         surfaceTintColor: Colors.transparent,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(AppDimensions.radiusLg),
@@ -109,8 +81,7 @@ abstract class AppTheme {
         clipBehavior: Clip.antiAlias,
       ),
 
-      // ── Elevated Button — gradient fill via custom widget ─────
-      // Base theme just shapes; AlleriskButton handles gradients.
+      // ── Elevated Button ──────────────────────────────────────
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
           backgroundColor: AppColors.primary,
@@ -141,24 +112,20 @@ abstract class AppTheme {
       // ── Input — Soft Underline (no box) ───────────────────────
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
-        fillColor: isDark
-            ? AppColors.surfaceContainerLowDark
-            : AppColors.surfaceContainerLow,
+        fillColor: AppColors.surfaceContainerLow,
         border: const UnderlineInputBorder(
           borderSide: BorderSide(
             color: AppColors.outlineVariant,
             width: AppDimensions.inputBottomBorderWidth,
           ),
         ),
-        enabledBorder: UnderlineInputBorder(
+        enabledBorder: const UnderlineInputBorder(
           borderSide: BorderSide(
-            color: isDark
-                ? AppColors.outlineVariantDark
-                : AppColors.outlineVariant,
+            color: AppColors.outlineVariant,
             width: AppDimensions.inputBottomBorderWidth,
           ),
         ),
-        focusedBorder: UnderlineInputBorder(
+        focusedBorder: const UnderlineInputBorder(
           borderSide: BorderSide(
             color: AppColors.primary,
             width: AppDimensions.inputBottomBorderWidth + 0.5,
@@ -181,16 +148,10 @@ abstract class AppTheme {
           vertical: AppDimensions.md,
         ),
         labelStyle: textTheme.bodyMedium?.copyWith(
-          color: isDark
-              ? AppColors.onSurfaceVariantDark
-              : AppColors.onSurfaceVariant,
+          color: AppColors.onSurfaceVariant,
         ),
         hintStyle: textTheme.bodyMedium?.copyWith(
-          color:
-              (isDark
-                      ? AppColors.onSurfaceVariantDark
-                      : AppColors.onSurfaceVariant)
-                  .withValues(alpha: 0.6),
+          color: AppColors.onSurfaceVariant.withValues(alpha: 0.6),
         ),
       ),
 
@@ -204,13 +165,9 @@ abstract class AppTheme {
       // ── Bottom Navigation ─────────────────────────────────────
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
         elevation: 0,
-        backgroundColor: isDark
-            ? AppColors.surfaceContainerHighDark.withValues(alpha: 0.95)
-            : AppColors.surfaceContainerLowest.withValues(alpha: 0.95),
+        backgroundColor: AppColors.surfaceContainerLowest.withValues(alpha: 0.95),
         selectedItemColor: AppColors.primary,
-        unselectedItemColor: isDark
-            ? AppColors.onSurfaceVariantDark
-            : AppColors.onSurfaceVariant,
+        unselectedItemColor: AppColors.onSurfaceVariant,
         selectedLabelStyle: textTheme.labelSmall,
         unselectedLabelStyle: textTheme.labelSmall,
         type: BottomNavigationBarType.fixed,
@@ -218,9 +175,7 @@ abstract class AppTheme {
 
       // ── Chip ─────────────────────────────────────────────────
       chipTheme: ChipThemeData(
-        backgroundColor: isDark
-            ? AppColors.surfaceContainerHighDark
-            : AppColors.surfaceContainerLow,
+        backgroundColor: AppColors.surfaceContainerLow,
         labelStyle: textTheme.labelMedium,
         padding: const EdgeInsets.symmetric(
           horizontal: AppDimensions.md,
@@ -234,9 +189,7 @@ abstract class AppTheme {
 
       // ── Dialog ────────────────────────────────────────────────
       dialogTheme: DialogThemeData(
-        backgroundColor: isDark
-            ? AppColors.surfaceContainerLowDark
-            : AppColors.surface,
+        backgroundColor: AppColors.surface,
         elevation: AppDimensions.elevationFloat,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(AppDimensions.radiusXl),
@@ -246,12 +199,10 @@ abstract class AppTheme {
       ),
 
       // ── Bottom Sheet ──────────────────────────────────────────
-      bottomSheetTheme: BottomSheetThemeData(
-        backgroundColor: isDark
-            ? AppColors.surfaceContainerLowDark
-            : AppColors.surface,
+      bottomSheetTheme: const BottomSheetThemeData(
+        backgroundColor: AppColors.surface,
         elevation: 0,
-        shape: const RoundedRectangleBorder(
+        shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.vertical(
             top: Radius.circular(AppDimensions.radiusXl),
           ),
@@ -260,11 +211,9 @@ abstract class AppTheme {
 
       // ── Snackbar ─────────────────────────────────────────────
       snackBarTheme: SnackBarThemeData(
-        backgroundColor: isDark
-            ? AppColors.surfaceContainerHighDark
-            : AppColors.onSurface,
+        backgroundColor: AppColors.onSurface,
         contentTextStyle: textTheme.bodyMedium?.copyWith(
-          color: isDark ? AppColors.onSurface : AppColors.surface,
+          color: AppColors.surface,
         ),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(AppDimensions.radiusMd),

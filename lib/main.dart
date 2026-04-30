@@ -35,7 +35,7 @@ class AllerRiskApp extends StatelessWidget {
       initialBinding: AppBinding(),
       theme: AppTheme.light,
       darkTheme: AppTheme.light,
-      themeMode: ThemeMode.system,
+      themeMode: ThemeMode.light,
       initialRoute: Routes.SPLASH,
       getPages: AppPages.routes,
     );
